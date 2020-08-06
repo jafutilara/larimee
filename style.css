@@ -1,0 +1,280 @@
+@font-face{
+  font-family: Parisienne;
+  src: url(Parisienne-Regular.ttf);
+}
+
+body,
+html {
+  /*height: 100%;*/
+  font-family: Roboto;
+}
+
+body {
+  background-image: url("./background.jpg");
+  /*height: 100% !important;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block{
+  display: block;
+}
+
+.Main {
+  margin: 2rem auto;
+}
+
+.size-fix{
+  width: 60%;
+}
+
+.logo {
+  text-align: center;
+  margin: 2rem;
+}
+
+.logo img {
+  width: 12%;
+  height: 12%;
+}
+
+.nav-link {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.bg-blue {
+  background-color: rgba(93, 167, 170, 0.8);
+  /*opacity: 0.8;*/
+  border-radius: 25px;
+}
+
+.left {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.left img {
+  margin-right: 10px;
+}
+.right img {
+  margin-right: 10px;
+}
+
+.right {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.back {
+  background-color: #fff;
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.back a {
+  text-decoration: none;
+  color: #5da7aa;
+}
+
+.us {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 0.5em;
+  background-color: #5da7aa;
+}
+
+.heading{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.us h1 {
+  font-weight: light;
+  font-size: 2rem;
+}
+
+p {
+  padding: 10px 4rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: white;
+}
+
+h1 {
+  font-weight: normal;
+  color: white;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.boxes {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-gap: 10px;
+  padding: 1rem;
+}
+
+.mission {
+  grid-column: 1/2;
+  background-color: rgba(93, 167, 170, 0.8);
+  text-align: center;
+  margin: 1rem;
+  border-radius: 50px;
+}
+
+.vission {
+  grid-column: 2/3;
+  background-color: rgba(93, 167, 170, 0.8);
+  /*opacity: 0.8;*/
+  text-align: center;
+  margin: 1rem;
+  border-radius: 50px;
+}
+
+img {
+  width: 50%;
+  height: 50px;
+}
+
+.first {
+  grid-column: 1/2;
+  background-color: none;
+  text-align: center;
+}
+
+.first img {
+  width: 80%;
+  height: 80%;
+}
+
+.second {
+  grid-column: 2/3;
+  background-color: rgba(93, 167, 170, 0.8);
+  /*opacity: 0.8;*/
+  text-align: center;
+  margin: 1rem;
+  border-radius: 50px;
+  height: 280px;
+}
+
+.second p {
+  padding: 1rem;
+}
+
+.title{
+  font-family: Parisienne;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+}
+
+.h-auto{
+  height: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.myNavbar{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.drop-menu{
+  margin: 0.5em 0 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  /*left: 20%;  */
+}
