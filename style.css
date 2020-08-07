@@ -170,18 +170,44 @@ img {
 
 .first img {
   width: 80%;
-  height: 80%;
+  height: auto;
+  /* height: 80%; */
+}
+
+details{
+  color: white;
+  font-family: inherit;
+  /* font-size: 15px; */
+  background-color: rgba(93, 167, 170, 0.8);
+  border-radius: 50px;
+  padding: 1rem 4rem;
+}
+
+summary{
+  list-style: none;
+
+}
+
+summary:hover{
+  cursor: unset;
+}
+
+.masDetalles:hover{
+  cursor: pointer;
+}
+.menosDetalles:hover{
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 .second {
   font-family: inherit;
   grid-column: 2/3;
-  background-color: rgba(93, 167, 170, 0.8);
-  /*opacity: 0.8;*/
   text-align: center;
   margin: 1rem;
-  border-radius: 50px;
-  height: 280px;
 }
 
 .second p {
