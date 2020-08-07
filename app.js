@@ -29,7 +29,7 @@ function showSlides(n) {
 
 
 myDropDowns = document.querySelectorAll(".myDropDown");
-myDropMenus = document.querySelectorAll("myDropMenu");
+myDropMenus = document.querySelectorAll(".myDropMenu");
 
 for (let i = 0; i < myDropDowns.length; i++) {
   myDropDowns[i].addEventListener("click", (e)=>{

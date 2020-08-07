@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Larimèe Dominicana</title>
+    <title>Larimée Dominicana</title>
     <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/icon/shopping-bag">
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
     <link
@@ -26,10 +26,10 @@
         <a class="nav-link" href="#">Inicio</a>
         <span href="#">
           <a class="nav-link myDropDown" href="#">Tienda</a>
-          <div class="myDropMenu bg-blue mt05rem p_absolute oculto">
+          <div class="myDropMenu bg-blue mt05rem p_absolute oculto z-5">
             <span>
               <a class="nav-link myDropDown" href="#">Mujeres</a>
-              <div class="myDropMenu oculto">
+              <div class="myDropMenu z-5 oculto">
                 <a class="nav-link" href="#">Anillos</a>
                 <a class="nav-link" href="#">Aretes</a>
                 <a class="nav-link" href="#">Dormilonas</a>
@@ -40,7 +40,7 @@
             </span>
             <span>
               <a class="nav-link myDropDown" href="#">Hombre</a>
-              <div class="myDropMenu oculto">
+              <div class="myDropMenu z-5 oculto">
                 <a class="nav-link" href="#">Gemelos</a>
                 <a class="nav-link" href="#">Anillos</a>
                 <a class="nav-link" href="#">Pulseras</a>
@@ -49,100 +49,13 @@
             </span>
           </div>
         </span>
-        <a class="nav-link" href="#">Nosotros</a>
-        <a class="nav-link" href="#">Contactos</a>
+        <a class="nav-link" href="./contacto.html">Nosotros</a>
+        <a class="nav-link" href="#">Contacto</a>
       </nav>
-
-      <!-- <nav class="myNavbar bg-blue"> 
-        <a class="nav-link myDropdown" href="#">Tienda</a>
-        <a class="nav-link" href="#">Nosotros</a>
-        <a class="nav-link" href="#">Contactos</a>
-      </nav>
-      <div class="drop-menu bg-blue">
-          <a class="nav-link myDropdown" href="#">Mujer
-          </a>
-          <div class="drop-menu">
-            <a class="nav-link" href="#">no tengo</a>
-          </div>
-          <a class="nav-link myDropdown" href="#">Hombre</a>
-          <div class="drop-menu">
-            <a class="nav-link" href="#">no tengo</a>
-          </div>
-        </div> -->
-
-
-      <!-- <nav class="navbar navbar-expand-lg bg-blue">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <ul class="nav vbar-expand-lg">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
-            </li> -->
-
-
-
-<!--             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Tienda
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <button
-                  type="button"
-                  class="dropdown-item dropdown-toggle"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Mujer
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Collares</a>
-                  <a class="dropdown-item" href="#">Aretes</a>
-                  <a class="dropdown-item" href="#">Pulseras</a>
-                </div>
-                <a class="dropdown-item" href="#">Hombre</a>
-              </div>
-            </li> -->
-
-
-
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
-
-
 
       <div class="left">
-        <img style="object-fit: fill;" src="./instagram-logo1.png" alt="logo" />
-        <img style="object-fit: fill;" src="./facebookLogo1.png" alt="logo" />
+        <img style="object-fit: fill; height: 32px;" src="./instagram-logo1.png" alt="logo" />
+        <img style="object-fit: fill; height: 32px;" src="./facebookLogo1.png" alt="logo" />
       </div>
       <div class="right">
         <i class="fa fa-shopping-bag" aria-hidden="true"style="font-size:3em; color: #5da7aa;"></i>
@@ -151,19 +64,22 @@
     
 
  <!-- Slideshow container -->
-<div class="slideshow-container" style="z-index: -1;">
+<div class="slideshow-container" style="z-index: 2;">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides">
-    <img src="slider1.jpeg" style="width:100%; height: auto">
+    <img src="slider1.jpeg" style="width:100%; height: auto; object-fit: cover;">
+    <div class="text">Brazalete en Plata y Larimar</div>
   </div>
 
   <div class="mySlides">
-    <img src="slider2.jpeg" style="width:100%; height: auto">
+    <img src="slider2.jpeg" style="width:100%; height: auto; object-fit: cover;">
+    <div class="text">Gemelos en Plata y Larimar</div>
   </div>
 
   <div class="mySlides">
-    <img src="slider3.jpeg" style="width:100%; height: auto">
+    <img src="slider3.jpeg" style="width:100%; height: auto; object-fit: cover;">
+    <div class="text">Aretes en plata y Larimar</div>
   </div>
 
   <!-- Next and previous buttons -->
