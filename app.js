@@ -26,3 +26,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+
+myDropDowns = document.querySelectorAll(".myDropDown");
+myDropMenus = document.querySelectorAll("myDropMenu");
+
+for (let i = 0; i < myDropDowns.length; i++) {
+  myDropDowns[i].addEventListener("click", (e)=>{
+    e.preventDefault();
+    let target = myDropMenus[i]
+    if(target.classList.contains("oculto") == true ){
+      target.classList.remove("oculto")
+    }else{
+      target.classList.add("oculto")
+    }
+  })
+}

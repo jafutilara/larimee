@@ -264,17 +264,34 @@ img {
   background-color: #717171;
 }
 
-.myNavbar{
+.myNavBar{
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
 }
 
-.drop-menu{
+.mt05rem{
   margin: 0.5em 0 0 0;
+}
+
+.myRow{
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+}
+
+.myDropDown{
   position: relative;
-  /*left: 20%;  */
+}
+
+.myDropMenu{
+  margin-left: 1em;
+}
+
+.p_absolute{
+  position: absolute;
+}
+
+.oculto{
+  display: none !important;
 }
